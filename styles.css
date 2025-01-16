@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    
+    text-decoration: none; /* Reset underline for all elements */
+    
+    
+}
+
+.links a:hover{
+    color: gray;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: #1f2937;
+    padding: 2rem 10rem;
+}
+
+.section1{
+    background-color: #1f2937;
+    padding: 5rem 10rem;
+}
+
+
+.navbar, .section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(11, 8, 8);
+}
+
+.mainimg{
+    padding: 5rem 7rem;  
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.description{
+    max-width: 30rem;
+}
+
+.description h1{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.description p, a{
+    color: rgb(200, 200, 180);
+    max-width: 27rem;
+}
+.description button{
+    padding: 0.5rem 0.7rem;
+}
+.logo{
+    margin-right: auto;
+ 
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    color: whitesmoke;
+}
+
+.links a{
+    color: whitesmoke;
+    padding: 0 1rem;
+}
+
+.section2{
+    margin: 4rem 10rem;
+    
+}
+.section2 h1{
+    color: black;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.container>div>div {
+    border: 2px solid #3882F6;
+    padding: 6rem 2rem;
+    margin: 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.container>div>p{
+    color: rgb(30, 30, 10);
+}
+
+.quote{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 4rem 20%;
+}
+
+.quote p:nth-child(1){
+    align-self: flex-end;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2.8rem;
+    font-size: 2rem;
+}
+
+.quote p:nth-child(2){
+    align-self: flex-end;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 15rem;
+    padding: 3rem 0;
+    background-color: #3882F6;
+    border-radius: 1rem;
+}
+.text p:nth-child(1){
+    font-size: 1.7rem;
+}
+.text p{
+    margin: 0.5rem;
+    color: white;
+}
+.section3 button{
+    background-color: #3882F6;
+    color: white;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.section3 button:hover{
+    background-color: blue;
+    padding: auto 2rem;
+}
+footer>div{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #1f2937;
+}
+@media(max-width: 700px){
+    .description h1{
+        font-size: 1.5rem;
+       
+    }
+    .header, .section{
+        padding: 0 0;
+    }
+    .mainimg{
+        padding: 5rem 3rem;  
+        margin-bottom: 2rem;
+        border-radius: 0.3rem;
+    }
+    
+    .description{
+        max-width: 30rem;
+    }
+
+    header{
+        padding: 2rem 2rem ;
+        
+    }
+    .section1{
+        padding: 0 2rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .description button{
+        margin: 1rem 0 ;
+    }
+    .section2{
+        margin: 1rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .quote p:nth-child(1){
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .quote{
+        padding: 1rem;
+    }
+    .section3{
+        margin: 2rem 0.1rem;
+    }
+    nav{
+        display: none;
+    }
+    .header, nav, .navbar{
+        display: none;
+    }
+}
